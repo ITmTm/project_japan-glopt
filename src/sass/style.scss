@@ -2,6 +2,10 @@
 @import "libs/fonts";
 @import "base/variables";
 
+:root {
+		--swiper-theme-color: #ec644b;
+}
+
 * {
     box-sizing: border-box;
 		font-family: "Roboto", "Roboto Condensed", sans-serif;
