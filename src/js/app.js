@@ -1,4 +1,39 @@
 window.addEventListener("DOMContentLoaded", () => {
+
+	const OpenModal = document.querySelectorAll("[data-modal]"),
+		  closeModal = document.querySelector("[data-close]"),
+		  modal = document.querySelector('.modal');
+
+	OpenModal.forEach((item) => {
+		item.addEventListener('click', () => {
+			modal.showModal();
+			document.body.style.overflow = 'hidden';
+		})
+	})
+
+	closeModal.addEventListener('click', () => {
+		modal.close();
+	})
+
+	modal.addEventListener('click', (e) => {
+		if (e.target === modal || e.target.getAttribute('data-close') === '') {
+			modal.close();
+			document.body.style.overflow = '';
+		}
+	});
+
+	document.addEventListener('keydown', (e) => {
+		if (e.code === 'Escape') {
+			modal.close();
+			document.body.style.overflow = '';
+		}
+	});
+
+
+
+
+
+
 	let swiper = new Swiper('.swiper', {
 		slidesPerView: 1,
 		direction: getDirection(),
