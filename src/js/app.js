@@ -30,8 +30,11 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 
 
+	const burger = document.querySelector('.burger');
 
-
+	burger.addEventListener('click', () => {
+		burger.classList.toggle('active');
+	});
 
 
 	let swiper = new Swiper('.swiper', {
