@@ -30,11 +30,23 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 
 
-	const burger = document.querySelector('.burger');
+	const burger = document.querySelector('.burger'),
+		  menu = document.querySelector('.mobile-menu'),
+	      menuItem = document.querySelectorAll('.menu-item');
 
 	burger.addEventListener('click', () => {
 		burger.classList.toggle('active');
+		menu.classList.toggle('active');
 	});
+
+	menuItem.forEach(item => {
+		item.addEventListener('click', () => {
+			burger.classList.toggle('active');
+			menu.classList.toggle('active');
+		})
+	})
+
+
 
 
 	let swiper = new Swiper('.swiper', {
