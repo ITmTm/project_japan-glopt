@@ -1,0 +1,82 @@
+.footer {
+		min-height: 700px;
+		overflow-x: hidden;
+		position: relative;
+		&__map {
+				img {
+						width: 100%;
+				}
+		}
+		&__info {
+				position: absolute;
+				width: 329px;
+				height: 160px;
+				top: 23%;
+				left: 52%;
+				transform: translateX(-49%);
+				background: url("../image/footer/substrate.png") center (center / cover) no-repeat;
+				padding: 27px 49px 28px 53px;
+		}
+		&__addr {
+				color: #3a3a3a;
+				font-weight: 300;
+				font-size: 14px;
+				margin-bottom: 0;
+				span {
+						font-size: 16px;
+						color: $main-color;
+						font-weight: 700;
+				}
+		}
+		&__phone {
+				color: #3a3a3a;
+				font-weight: 300;
+				font-size: 14px;
+				a {
+						text-decoration: none;
+						color: #170b0b;
+						font-weight: 400;
+						font-size: 14px;
+				}
+		}
+		&__email {
+				text-decoration: none;
+				color: $main-color;
+				font-weight: 400;
+				font-size: 14px;
+				transition: .6s all;
+				&:hover {
+						text-decoration: underline;
+						color: #4dcb14;
+				}
+		}
+		&__wrapp {
+				padding: 24px 0 36px 0;
+				background-color: #25333c;
+		}
+		&__present {
+				font-size: 16px;
+				font-weight: 700;
+				color: #fff;
+				margin-right: 15%;
+		}
+		&__hr {
+				height: 1px;
+				margin-top: 26px;
+				background-color: #674e4e;
+		}
+		&__policy {
+				text-align: center;
+				margin-top: 30px;
+				a {
+						font-size: 13px;
+						color: $main-color;
+						text-decoration: none;
+						transition: 0.4s ease-in-out;
+						&:hover {
+								font-size: 14px;
+								text-decoration: underline;
+						}
+				}
+		}
+}

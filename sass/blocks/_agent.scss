@@ -1,0 +1,38 @@
+.agent {
+		padding: 77px 0 76px 0;
+		background: url("../image/bg/japan.jpg") center (center / cover) no-repeat;
+		min-height: 345px;
+		&__icons {
+				position: relative;
+				&:before {
+						content: '';
+						width: 102px;
+						height: 102px;
+						border-radius: 100%;
+						border: 1px solid #fff;
+						position: absolute;
+						left: 50%;
+						top: -50%;
+						transform: translateX(-50%);
+						padding: 21px 27px 30px;
+				}
+				img {
+						display: block;
+						margin: 0 auto;
+				}
+		}
+		&__title {
+				margin-top: 40px;
+				font-size: 26px;
+				color: #ffffff;
+				font-weight: 700;
+				text-align: center;
+		}
+		&__subtitle {
+				color: #ffffff;
+				margin-top: 15px;
+				font-size: 19px;
+				font-weight: 300;
+				text-align: center;
+		}
+}
