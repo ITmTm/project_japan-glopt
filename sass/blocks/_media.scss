@@ -549,6 +549,10 @@
 				&__subtitle {
 						font-size: 25px;
 				}
+				.mobile-menu {
+						width: 85vw;
+						left: -85%;
+				}
 				.header {
 						&__logo {
 								width: 60px;
@@ -559,7 +563,6 @@
 				}
 				&__icons {
 						display: block;
-						margin: 0 auto;
 
 				}
 				&__icon {
