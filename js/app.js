@@ -30,6 +30,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 
 
+	// Burger
+
 	const burger = document.querySelector('.burger'),
 		  menu = document.querySelector('.mobile-menu'),
 	      menuItem = document.querySelectorAll('.menu-item');
@@ -46,8 +48,14 @@ window.addEventListener("DOMContentLoaded", () => {
 		})
 	})
 
+	// Mask
+
+	let selector = document.querySelectorAll('[data-phone]');
+	let im = new Inputmask('+7 (999) 999 - 99 - 99');
+	im.mask(selector);
 
 
+	// Swiper-slider
 
 	let swiper = new Swiper('.swiper', {
 		slidesPerView: 1,
