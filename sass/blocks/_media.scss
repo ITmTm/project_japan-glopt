@@ -597,8 +597,8 @@
 						font-size: 13px;
 				}
 				.grid-container {
-						grid-template-columns: repeat(1, 295px);
-
+						grid-template-columns: 100%;
+						row-gap: 45px;
 				}
 		}
 
@@ -628,6 +628,9 @@
 				}
 				&__subtitle {
 						font-size: 15px;
+				}
+				&__content {
+						justify-content: center;
 				}
 				&-item {
 						width: 290px;
@@ -665,7 +668,7 @@
 						font-size: 25px;
 				}
 				.grid-container {
-						grid-template-columns: repeat(1, 300px);
+						grid-template-columns: 100%;
 				}
 				&__wrapper {
 						justify-items: center;
@@ -752,8 +755,8 @@
 						padding: 20px;
 				}
 				&__close {
-						top: -20px;
-						right: 0px;
+						top: -22px;
+						right: 0;
 						font-size: 45px;
 				}
 				.feed-form_popup {
